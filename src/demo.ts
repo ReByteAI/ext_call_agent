@@ -1,8 +1,10 @@
 // import chalk from "npm:chalk";
 // import { Octokit } from 'npm:octokit';
+
+// @deno-types="https://deno.land/x/chalk_deno@v4.1.1-deno/index.d.ts"
 import chalk from "https://deno.land/x/chalk_deno@v4.1.1-deno/source/index.js";
-import Client from 'https://deno.land/x/denohub/index.ts';
-import { GoogleAPI } from "https://deno.land/x/google_deno_integration/mod.ts";
+import Client from 'https://deno.land/x/denohub@0.1.1/index.ts';
+import { GoogleAPI } from "https://deno.land/x/google_deno_integration@v1.1/mod.ts";
 
 import { create_github_issue } from "./github.ts";
 
