@@ -3,7 +3,7 @@ import { denoPlugins } from "https://deno.land/x/esbuild_deno_loader@0.8.1/mod.t
 
 await esbuild.build({
   plugins: [...denoPlugins({ loader: "native", nodeModulesDir: true })],
-  entryPoints: ["./demo.ts"],
+  entryPoints: ["./src/demo.ts"],
   outfile: "./dist/demo.js",
   bundle: true,
   format: "esm",
