@@ -25,11 +25,11 @@ function logSuccess(msg: string) {
   console.log(chalk.green(msg));
 }
 
-async function main() {
-  await client.login();
-  console.log("login github success");
-//   const ret = await client.currentUser();
-//   console.log(ret);
+const url = await create_github_issue();
+
+/// rebyte_main func can't be async function
+export function rebyte_main(env: any) {
+  logSuccess("Hello World!");
+  console.log(url);
+  return env
 }
-create_github_issue();
-logSuccess("Hello World!");

@@ -22,6 +22,7 @@ export async function create_github_issue() {
     if (response.ok) {
       const issue = await response.json();
       console.log(`Issue created: ${issue.html_url}`);
+      return issue.html_url;
     } else {
       console.log(`Failed to create issue: ${response.statusText}`);
     }
