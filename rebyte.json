@@ -1,0 +1,6 @@
+{
+  "name": "rebyte-jsfile-example",
+  "description": "This is a example project for rebyte cli",
+  "main": "./src/demo.ts",
+  "out": "./dist/rebyte-jsfile-example.js"
+}
