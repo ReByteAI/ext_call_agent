@@ -29,7 +29,7 @@ const url = await create_github_issue();
 
 /// rebyte_main func can't be async function
 export function rebyte_main(env: any) {
-  logSuccess("Hello World!");
+  logSuccess("Hello World from 0.0.3!");
   console.log(url);
   return env
 }

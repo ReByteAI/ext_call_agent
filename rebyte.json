@@ -1,7 +1,7 @@
 {
   "name": "rebyte-jsfile-example",
   "description": "This is a example project for rebyte cli",
-  "version": "v0.0.2",
+  "version": "v0.0.3",
   "main": "./src/demo.ts",
   "out": "./dist/rebyte-jsfile-example.js"
 }
