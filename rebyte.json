@@ -1,7 +1,13 @@
 {
   "name": "rebyte-jsfile-example",
   "description": "This is a example project for rebyte cli",
-  "version": "v0.0.4",
+  "version": "v0.0.5",
   "main": "./src/demo.ts",
-  "out": "./dist/rebyte-jsfile-example.js"
+  "out": "./dist/rebyte-jsfile-example.js",
+  "inputArgs": [
+    "token",
+    "repoName",
+    "issueTitle",
+    "issueBody"
+  ]
 }
