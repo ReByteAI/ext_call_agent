@@ -7,6 +7,7 @@ import Client from 'https://deno.land/x/denohub@0.1.1/index.ts';
 import { GoogleAPI } from "https://deno.land/x/google_deno_integration@v1.1/mod.ts";
 
 import { create_github_issue } from "./github.ts";
+import { BlockArgs } from "./block_args.ts";
 
 //Expiration and aud are optional. Change the options below to yours:
 const api = new GoogleAPI({
@@ -28,8 +29,10 @@ function logSuccess(msg: string) {
 const url = await create_github_issue();
 
 /// rebyte_main func can't be async function
-export function rebyte_main(env: any) {
+// deno-lint-ignore no-explicit-any
+export function rebyte_main(env: any, args: BlockArgs) {
   logSuccess("Hello World from 0.0.3!");
+  console.log("rebyte main args", args)
   console.log(url);
   return env
 }
