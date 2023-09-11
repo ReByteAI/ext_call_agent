@@ -34,5 +34,5 @@ export function rebyte_main(env: any, args: BlockArgs) {
   logSuccess("Hello World from 0.0.3!");
   console.log("rebyte main args", args)
   console.log(url);
-  return env
+  return env.state
 }
