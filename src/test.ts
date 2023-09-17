@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.201.0/assert/mod.ts";
-import {rebyte_main} from "./main.ts";
+import { rebyte_main } from "./main.ts";
 import { ActionArgs } from "./action_args.ts";
 
 const args: ActionArgs = {
@@ -7,11 +7,13 @@ const args: ActionArgs = {
   callableId: "eb25ed8fbd3bdad30227",
   apiKey: "sk-f591f6cca6cdffe2043c7e1e1257afeb",
   inputArgs: [{
-    "Key": "Value"
-  }]
-}
+    "Key": "Value",
+  }],
+};
 
 Deno.test("url test", async () => {
-  await rebyte_main({}, args)
+  await rebyte_main({
+    context: {},
+    args: args,
+  });
 });
-

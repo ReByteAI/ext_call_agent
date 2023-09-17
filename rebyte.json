@@ -1,9 +1,45 @@
 {
-  "name": "rebyte-callable-caller",
-  "description": "This is a example project for rebyte cli",
-  "version": "v0.0.1",
-  "main": "./src/demo.ts",
+  "name": "rebyte_callable_caller",
+  "description": "Action that calls a ReByte callable",
+  "version": "0.0.1",
+  "main": "./src/main.ts",
   "out": "./dist/rebyte-callable-caller.js",
   "inputArgs": [
+    {
+      "name": "callableId",
+      "type": "string",
+      "description": "id of the callable to call",
+      "required": true
+    },
+    {
+      "name": "projectId",
+      "type": "string",
+      "description": "project id of the callable to call",
+      "required": true
+    },
+    {
+      "name": "apiKey",
+      "type": "string",
+      "description": "API key to use for the call",
+      "required": true
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "description": "version of the callable to call",
+      "required": false
+    },
+    {
+      "name": "inputArgs",
+      "type": "array",
+      "description": "input arguments to pass to the callable",
+      "required": false
+    },
+    {
+      "name": "blocking",
+      "type": "boolean",
+      "description": "whether to wait for the callable to finish",
+      "required": false
+    }
   ]
 }
