@@ -1,4 +1,3 @@
-import { assertEquals } from "https://deno.land/std@0.201.0/assert/mod.ts";
 import { rebyte_main } from "./main.ts";
 import { ActionArgs } from "./action_args.ts";
 

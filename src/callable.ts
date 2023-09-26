@@ -9,7 +9,7 @@ export async function callable_caller(args: ActionArgs, context: any) {
     "version": args.version || "latest",
     "config": args.config || {},
     "blocking": args.blocking || false,
-    "inputs": args.inputArgs || {},
+    "inputs": args.inputArgs || [],
   };
 
   const response = await fetch(
