@@ -1,7 +1,7 @@
 {
   "name": "rebyte_callable_caller",
   "description": "Action that calls a ReByte callable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./src/main.ts",
   "out": "./dist/rebyte-callable-caller.js",
   "inputArgs": [
@@ -19,7 +19,7 @@
     },
     {
       "name": "apiKey",
-      "type": "string",
+      "type": "credential",
       "description": "API key to use for the call",
       "required": true
     },
