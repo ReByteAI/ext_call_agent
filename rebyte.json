@@ -1,6 +1,6 @@
 {
-  "name": "rebyte_callable_caller",
-  "description": "Action that calls a ReByte callable",
+  "name": "call_agent",
+  "description": "Action that calls another ReByte agent",
   "version": "0.0.1",
   "main": "./src/main.ts",
   "out": "./dist/rebyte-callable-caller.js",
