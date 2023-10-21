@@ -5,5 +5,4 @@ export type ActionArgs = {
   version?: string;
   inputArgs?: object[];
   config?: object;
-  blocking?: boolean;
 };

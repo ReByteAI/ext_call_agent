@@ -1,44 +1,37 @@
 {
   "name": "call_agent",
   "description": "Action that calls another ReByte agent",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./src/main.ts",
-  "out": "./dist/rebyte-callable-caller.js",
   "inputArgs": [
     {
       "name": "callableId",
       "type": "string",
-      "description": "id of the callable to call",
+      "description": "Id of target agent to call",
       "required": true
     },
     {
       "name": "projectId",
       "type": "string",
-      "description": "project id of the callable to call",
+      "description": "project id of the agent",
       "required": true
     },
     {
       "name": "apiKey",
       "type": "credential",
-      "description": "API key to use for the call",
+      "description": "API key to use for targeting project",
       "required": true
     },
     {
       "name": "version",
       "type": "string",
-      "description": "version of the callable to call",
+      "description": "version of the agent, latest if not specified",
       "required": false
     },
     {
       "name": "inputArgs",
       "type": "array",
-      "description": "input arguments to pass to the callable",
-      "required": false
-    },
-    {
-      "name": "blocking",
-      "type": "boolean",
-      "description": "whether to wait for the callable to finish",
+      "description": "input arguments to pass to the agent",
       "required": false
     }
   ]

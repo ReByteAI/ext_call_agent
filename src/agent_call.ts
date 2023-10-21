@@ -1,14 +1,16 @@
 import { ActionArgs } from "./action_args.ts";
+import * as jose from 'https://deno.land/x/jose@v4.15.3/index.ts'
 
 const env = Deno.env.toObject();
 
 const server = env.REBYTE_SERVER || "https://rebyte.ai";
 
-export async function callable_caller(args: ActionArgs, context: any) {
+export async function agent_caller(args: ActionArgs, context: any) {
   const params = {
     "version": args.version || "latest",
     "config": args.config || {},
-    "blocking": args.blocking || false,
+    // "blocking": args.blocking || false,
+    "blocking": true,
     "inputs": args.inputArgs || [],
   };
 
