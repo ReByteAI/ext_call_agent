@@ -1,7 +1,7 @@
 {
   "name": "call_agent",
   "description": "Action that calls another ReByte agent",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./src/main.ts",
   "inputArgs": [
     {
