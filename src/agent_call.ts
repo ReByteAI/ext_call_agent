@@ -3,7 +3,8 @@ import * as jose from 'https://deno.land/x/jose@v4.15.3/index.ts'
 
 const env = Deno.env.toObject();
 
-const server = env.REBYTE_SERVER || "https://rebyte.ai";
+// const server = env.REBYTE_SERVER || "https://rebyte.ai";
+const server = env.REBYTE_SERVER || "https://colingo.ai";
 
 export async function agent_caller(args: ActionArgs, context: any) {
   const params = {
