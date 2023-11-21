@@ -1,6 +1,6 @@
 export type ActionArgs = {
   projectId: string;
-  callableId: string;
+  agentId: string;
   apiKey: string;
   version?: string;
   inputArgs?: object[];

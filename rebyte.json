@@ -5,7 +5,7 @@
   "main": "./src/main.ts",
   "inputArgs": [
     {
-      "name": "callableId",
+      "name": "agentId",
       "type": "string",
       "description": "Id of target agent to call",
       "required": true
